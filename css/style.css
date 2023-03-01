@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --body-bg: #000;
+  --primary-text: #E1E1E6;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  color: var(--primary-text);
+  background: var(--body-bg);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#app {
+  max-width: 112rem;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8rem 0;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  width: 46.2rem;
+  height: 4.8rem;
+  padding: 1.6rem;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  margin-right: .5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #06181C;
+}
+
+.search button {
+  width: 17rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.6rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: all 0.1s cubic-bezier(0.47, 0, 0.745, 0.715);
+  color: #fff;
+  background: #065E7C;
+}
+
+.search button:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #065E7C;
+}
+
+.search svg path {
+  transition: all 0.1s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.search button:hover svg path {
+  fill: #065E7C;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table * {
+  font-size: 2rem;
+}
+
+table thead {
+  background: #092D38;
+}
+
+table th {
+  text-align: left;
+  font-weight: 500;
+  padding: 2rem;
+}
+
+table th:first-child {
+  border-top-left-radius: 1rem;
+  padding-left: 5rem;
+}
+
+table th:last-child {
+  border-top-right-radius: 1rem;
+}
+
+table td {
+  text-align: left;
+  padding: 2rem;
+}
+
+.container {
+  max-height: 70rem;
+  overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar {
+  width: 0.6rem;
+  height: 0.6rem;
+  margin-right: 5px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #065E7C;
+  border-radius: 10px;
+  cursor: move;
+}
+
+.container::-webkit-scrollbar-track {
+  background-color: transparent;
+  border: none;
+}
+
+tbody td:first-child {
+  padding-left: 4rem;
+}
+
+tbody tr:nth-child(odd) {
+  background: #06161b87;
+}
+
+tbody tr:nth-child(even) {
+  border: 1px solid #4a808ca6;
+  background: #06181C;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+td.user img {
+  width: 5.6rem;
+  height: 5.6rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+td a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+  color: var(--primary-text);
+}
+
+td p {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+td span {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #c2c2c2;
+}
+
+td button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  font-weight: 700;
+  transition: all 0.1s cubic-bezier(0.47, 0, 0.745, 0.715);
+  color: #F75A68;
+}
+
+td button:hover {
+  cursor: pointer;
+  text-shadow: 0 0 3px #F75A68;
+}
+
+.hide {
+  display: none;
+}
+
+.empty-display {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  margin-top: 17rem;
+  font-family: 'Roboto Mono', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #4E5455;
+}
+
+.empty-display svg {
+  width: 132px;
+  height: 125px;
+}
